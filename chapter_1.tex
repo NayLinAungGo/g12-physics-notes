@@ -12,6 +12,26 @@
 	\item The distance between the center of mass and the axis of rotation remains \textbf{fixed}.
 	\item Artificial satellites, for example, orbit the Earth at a fixed altitude.
 
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[scale=1]
+    \draw[thick, fill=gray!10, fill opacity=0.5] (0,0) circle (1);
+    \filldraw (0,0) circle (0.1);
+    \filldraw (0,1) circle (0.1);
+    \draw[->] (0,1) -- (1,);
+  \end{tikzpicture}%
+  \hfil
+  \begin{tikzpicture}[z={(0cm,1cm)}]
+    %Axis
+    \draw[->] (0,0,0) -- (0,0,1) node[above] {$\omega$};
+
+    %Circle
+    \draw[thick, fill=gray!10, fill opacity=0.5] (0,0) ellipse (2cm and 0.8cm);
+    \draw[->] (2cm,0) -- (2.2cm,0.8cm) node[right] {$v$};
+  \end{tikzpicture}
+  \caption{Rotational motion \& Circular motion}
+\end{figure}
+
 	\item \textbf{Rigid body:} size \& shape do not change as it moves;
 	\item \textbf{Rigid body} in \textbf{rotational motion:} all the particles undergo \textbf{circular motion}
 	\item \textbf{Rigid body} in \textbf{rotation:} its angular velocity changes therefore undergoes \textbf{angular acceleration}
