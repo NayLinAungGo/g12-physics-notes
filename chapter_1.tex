@@ -2,42 +2,43 @@
 \chapter{Rotational Motion}
 
 \section{Rotational Motion under Constant Angular Acceleration}
-
 \begin{itemize}
-  \item \textbf{Rotational motion:} an object rotates \textbf{around an axis}.
-  \begin{itemize}
-    \item The axis of rotation can change.
-    \item For example, the Earth rotates on its own axis.
-  \end{itemize}
+	\item \textbf{Rotational motion:} An object rotates \textbf{around an axis}.
+	\begin{itemize}
+		\item The axis of rotation can change.
+		\item For example, the Earth rotates on its own axis.
+	\end{itemize}
 
 	\item \textbf{Circular motion:} a type of a two dimensional motion,
 		along \textbf{the circumference of a circle}.
-  \begin{itemize}
-    \item The distance between the center of mass and the axis of rotation remains \textbf{fixed}.
-    \item For example, artificial satellites orbit the Earth at a fixed altitude.
-  \end{itemize}
+	\begin{itemize}
+		\item The distance between the centre of mass and the axis of rotation remains \textbf{fixed}.
+		\item For example, artificial satellites orbit the Earth at a fixed altitude.
+	\end{itemize}
 \end{itemize}
 
 \begin{figure}[htbp]
-  \centering
-  \begin{tikzpicture}[scale=1]
-    \draw[thick, fill=gray!10, fill opacity=0.5] (0,0) circle (1);
-    \filldraw (0,0) circle (0.1);
-    \filldraw (0,1) circle (0.1);
-    \draw[->] (0,1) -- (1,);
-  \end{tikzpicture}%
-  \hfil
-  \begin{tikzpicture}[z={(0cm,1cm)}]
-    %Axis
-    \draw[->] (0,0,0) -- (0,0,1) node[above] {$\omega$};
+	\centering
+	\begin{tikzpicture}[scale=1]
+		\draw[thick, fill=gray!10, fill opacity=0.5] (0,0) circle (1);
+		\filldraw (0,0) circle (0.05);
+		\filldraw (0,1) circle (0.1);
+		\draw[->] (0,1) -- (1,);
+	\end{tikzpicture}%
+	\hfil
+	\begin{tikzpicture}[z={(0cm,1cm)}]
+		\draw[->] (0,0,0) -- (0,0,-1);
 
-    %Circle
-    \draw[thick, fill=gray!10, fill opacity=0.5] (0,0) ellipse (2cm and 0.8cm);
-    \draw[->] (2cm,0) -- (2.2cm,0.8cm) node[right] {$v$};
-  \end{tikzpicture}
-  \caption{Rotational motion \& Circular motion}
+		%Circle
+		\draw[thick, fill=gray!10, fill opacity=0.5] (0,0) ellipse (2cm and 0.8cm);
+		\draw[->] (2cm,0) -- (2.2cm,0.8cm) node[right] {$v$};
+
+		\draw[->] (0,0,0) -- (0,0,1) node[above] {$\omega$};
+
+		\filldraw (0,0) circle (0.05);
+	\end{tikzpicture}
+	\caption{Rotational motion \& Circular motion}
 \end{figure}
-
 
 \begin{itemize}
 	\item \textbf{Rigid body:} an extended object whose size \& shape do not change as it moves;
