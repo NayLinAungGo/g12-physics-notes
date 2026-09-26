@@ -74,26 +74,38 @@ $\boldsymbol{\alpha}$ is \textbf{negative} when rigid body is rotating:
 \end{tabular}
 \medskip
 
-If angular velocity changes at a constant rate:
+If angular velocity changes at a constant rate,
 angular acceleration is constant and
 the rotational motion is under \textbf{constant angular acceleration}
-
+\begin{align*}
+	\alpha &= \frac{\omega - \omega_0}{t}
+	,\, \text{for initial angular velocity $\omega_0$ at $t=0$}
+\end{align*}
 \begin{align}
-	\alpha &= \frac{\omega - \omega_0}{\tau} \nonumber \\
-	\omega &= \omega_0 + \alpha\tau \\
-	\text{Average angular speed: } \bar{\omega} &=  \frac{\omega + \omega_0}{2} \\
-	\theta &= \bar{\omega}\tau \nonumber \\
-	\theta &= \omega_0\tau + \frac12 \alpha\tau^2 \\
-	\omega^2 &= \omega_0\tau + 2 \alpha \theta
+	\omega &= \omega_0 + \alpha t
+	\label{eq:angular_speed} \\
+	%
+	\text{Average angular speed:}\,
+	\bar{\omega} &=	\frac{\omega + \omega_0}{2}
+	\label{eq:average_angular_speed} \\
+	%
+	\intertext{\centering Angular displacement for time interval $t$ is}
+	\theta &= \overline{\omega}t \nonumber \\
+	\intertext{\centering
+		Using
+		Eq. \eqref{eq:angular_speed} \&
+		Eq. \eqref{eq:average_angular_speed}
+	}
+	\theta &= \omega_0 t + \frac{1}{2} \alpha t^2 \\
+	\omega^2 &= \omega_0^2 + 2 \alpha \theta
 \end{align}
 
-Units:
-\begin{align*}
-	\text{angular displacement: } & \text{radian } (rad) = 2\pi \\
-	\text{angular velocity: } & \text{radian per second } (rad/s) \\
-	\text{angular acceleration: } & \text{radian per second squared } (rad/s^2)
-\end{align*}
-
+\textbf{Units:}
+\begin{flalign*}
+	\qquad\textbf{Angular displacement:}\enspace & \text{radian} \, (\text{rad}) = 2\pi & \\
+	\qquad\textbf{Angular velocity:}\enspace     & \text{radian per second} \, (\text{rad}/s) & \\
+	\qquad\textbf{Angular acceleration:}\enspace & \text{radian per second squared} \, (\text{rad}/s^2) &
+\end{flalign*}
 
 
 \section{Relation Between Angular \& Linear Quantities}
