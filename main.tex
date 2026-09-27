@@ -1,14 +1,14 @@
 \documentclass[12pt]{report}
 \usepackage{color,graphicx}
-\usepackage{amsmath}
-\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{lmodern}
 \usepackage{mathtools}
+\usepackage{enumitem}
+\setlist[itemize,1]{leftmargin=*}
+\setlist[itemize,2]{leftmargin=*}
+
 \usepackage{tikz}
-\usepackage[hidelinks,unicode=true,bookmarksnumbered]{hyperref}
-\hypersetup{
-	pdftitle={Grade-12 Physics Notes},
-	pdfauthor={Nay Lin Aung}
-}
+\usetikzlibrary{arrows.meta}
 
 \textwidth 170mm
 \textheight 210mm
@@ -18,11 +18,19 @@
 \parindent 1.5em
 
 
-\title{Grade-12 Physics Notes}
-\author{Nay Lin Aung}
 
 \setcounter{secnumdepth}{3}
 \renewcommand*{\thesubsubsection}{(\roman{subsubsection})}
+
+\usepackage[hidelinks,unicode=true,bookmarksnumbered]{hyperref}
+\hypersetup{
+	pdftitle={Grade-12 Physics Notes},
+	pdfauthor={Nay Lin Aung}
+}
+
+\title{Grade-12 Physics Notes}
+\author{Nay Lin Aung}
+
 
 \begin{document}
 
