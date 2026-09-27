@@ -17,7 +17,28 @@
 \evensidemargin 0mm
 \parindent 1.5em
 
+\setlength{\headheight}{15pt}
+\setlength{\headsep}{10mm}
 
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]
+  {\normalfont\huge\bfseries}
+	{\chaptertitlename\ \thechapter:}
+	{0.5em}
+	{}
+\titlespacing{\section}
+	{-2.5em}{*3}{*2}
+\titlespacing{\subsection}
+	{-2.5em}{*3}{*2}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[L]{Nay (5MVPT)}
+\fancyhead[R]{\nouppercase{\leftmark}}
+\renewcommand{\chaptermark}[1]{%
+	\markboth{Chapter \thechapter: #1}{}%
+}
 
 \setcounter{secnumdepth}{3}
 \renewcommand*{\thesubsubsection}{(\roman{subsubsection})}
