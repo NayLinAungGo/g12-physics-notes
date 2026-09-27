@@ -20,22 +20,26 @@
 \begin{figure}[htbp]
 	\centering
 	\begin{tikzpicture}[scale=1]
-		\draw[thick, fill=gray!10, fill opacity=0.5] (0,0) circle (1);
-		\filldraw (0,0) circle (0.05);
-		\filldraw (0,1) circle (0.1);
-		\draw[->] (0,1) -- (1,);
+		\coordinate (O) at (0,0);
+		\coordinate (A) at ([shift={(90:1)}]O);
+
+		\draw[thick, fill=gray!10, fill opacity=0.5] (O) circle (1);
+		\filldraw (O) circle (0.05);
+		\filldraw (A) circle (0.1);
+		\draw[->] (A) -- +(180:1);
 	\end{tikzpicture}%
 	\hfil
 	\begin{tikzpicture}[z={(0cm,1cm)}]
-		\draw[->] (0,0,0) -- (0,0,-1);
+		\coordinate (O) at (0,0,0);
+		\coordinate (A) at ([shift={(0:2)}]O);
 
-		%Circle
+		\draw[dashed] (O) -- ++(0,0,-1);
+
 		\draw[thick, fill=gray!10, fill opacity=0.5] (0,0) ellipse (2cm and 0.8cm);
-		\draw[->] (2cm,0) -- (2.2cm,0.8cm) node[right] {$v$};
-
-		\draw[->] (0,0,0) -- (0,0,1) node[above] {$\omega$};
+		\draw[->] (A) -- ++(0,0.8cm) node[right] {$v$};
 
 		\filldraw (0,0) circle (0.05);
+		\draw[->] (O) -- ++(0,0,1) node[above] {$\omega$};
 	\end{tikzpicture}
 	\caption{Rotational motion \& Circular motion}
 \end{figure}
