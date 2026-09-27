@@ -161,61 +161,82 @@ All particles of a rotating body move in a circle perpendicular to the axis
 	\item The \textbf{fingers} in the direction of \textbf{rotation}
 	\item The \textbf{thumb} in the direction of \textbf{angular velocity vector}
 \end{itemize}
-
 The angular velocity is:
 \begin{itemize}
-	\begin{itemize}
-		\item \textbf{increasing:} angular acceleration vector points in the \textbf{same} direction
-		\item \textbf{decreasing:} angular acceleration vector points in the \textbf{opposite} direction
-	\end{itemize}
+	\item \textbf{increasing:} angular acceleration vector points in the \textbf{same} direction
+	\item \textbf{decreasing:} angular acceleration vector points in the \textbf{opposite} direction
 \end{itemize}
 
 
 \section{Centripetal Acceleration}
 \begin{itemize}
 	\item Constant speed $v$: \textbf{uniform circular motion}
-	\item The magnitude of the velocity remains constant but the direction of velocity continuously changes
-	\item Continuously accelerated even when speed is constant $ (v_1 = v_2 = v) $
-	\item $\Delta t$ approaches zero: \textbf{instantaneous acceleration}
-	\item $\Delta t$ is very small: $\Delta s$ \& $\Delta \theta$ are also very small
-		and $\vec{v_2} \parallel \vec{v_1}$ 
+	\begin{itemize}
+		\item The magnitude of the velocity remains constant but the direction of velocity continuously changes
+		\item Continuously accelerated even when speed is constant $ (v_1 = v_2 = v) $
+	\end{itemize}
+	\begin{equation}
+		\text{Average acceleration:}\quad
+		\vec{\alpha} =
+		\frac{\vec{v_2} - \vec{v_1}}{\Delta t} =
+		\frac{\Delta\vec{v}}{\Delta t}
+	\end{equation}
+	\nopagebreak
+	\begin{center}
+			for change in velocity $\Delta\vec{v}$ during time interval $\Delta t$
+	\end{center}
+\end{itemize}
+\begin{itemize}
+	\item If $\Delta t$ approaches zero: \textbf{instantaneous acceleration}
+		\begin{equation}
+			\text{Change in velocity vector:}\quad
+			\vec{v_2} - \vec{v_1} = \Delta\vec{v}
+		\end{equation}
+	\item If $\Delta t$ is very small (approaching zero):
+		$\Delta s$ \& $\Delta \theta$ are also very small
+		and $\vec{v_2}$ will be \textbf{almost parallel} to $\vec{v_1}$ 
 	\item $\Delta\vec{v}$ perpendicular to both of them
 		and points toward the center of the circle
 	\item Acceleration $\vec{a}$ is in the same direction as $\Delta\vec{v}$,
 		and is \textbf{centripetal acceleration}
-	\item The centripetal (radial) acceleration can be determined as follow:
-
 \end{itemize}
-
-Therefore, 
 \begin{align}
+	\text{Centripetal acceleration:}\quad
 	a_c &= \frac{v^2}{r} \\
 	v &= r\omega \\
 	a_c &= r\omega^2
 \end{align}
 
-For \textbf{uniform circular motion},
-centripetal acceleration vector points towards the center
-while the linear velocity vector is tangential
-
-Centripetal acceleration \& linear velocity are perpendicular to each other
-
-For \textbf{non-uniform circular motion},
-angular speed is changing and the object experiences the angular acceleration
-
-There is tangential acceleration in addition to centripetal acceleration
-
-\begin{align}
-	\vec{a} &= \vec{a_c} + \vec{a_r}
-\end{align}
+\begin{tabular}{r p{0.55\textwidth}}
+	For \textbf{uniform circular motion}, &
+		Centripetal acceleration vector points towards the center
+		while the linear velocity vector is tangential.
+		\newline
+		Centripetal acceleration \& linear velocity are perpendicular to each other.
+		\\ \noalign{\medskip}
+	For \textbf{non-uniform circular motion}, &
+		angular speed is changing and the object experiences the angular acceleration.
+		\newline
+		There is tangential acceleration in addition to centripetal acceleration
+\end{tabular}
+\begin{equation}
+		\vec{a} &= \vec{a_c} + \vec{a_r}
+\end{equation}
 
 Unlike tangential acceleration,
 centripetal acceleration is present in both uniform \& non-uniform circular motion.
-
-\begin{align}
+The two acceleration vectors
+$\vec{A_C}$ in radial direction and
+$\vec{A_T}$ in tangential direction
+are perpendicular to each other.
+The resultant acceleration $\vec{a}$ points at an angle
+between them.
+\begin{alignat}{2}
+	\text{The magnitude of resultant acceleration:}&&\quad
 	a &= \sqrt{a_c^2 + a_r^2} \\
-	tan \phi &= \frac{a_r}{a_c}
-\end{align}
+	\text{The direction of resultant acceleration:}&&\quad
+	\tan\phi &= \frac{a_r}{a_c}
+\end{alignat}
 
 
 \section{Forces in Circular Motion}
