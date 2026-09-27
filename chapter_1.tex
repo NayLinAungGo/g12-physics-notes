@@ -112,32 +112,18 @@ All particles of a rotating body move in a circle perpendicular to the axis
 	\item When linear velocity changes \textbf{tangential acceleration} changes
 \end{itemize}
 \bigskip
+\begin{minipage}{0.6\textwidth}
 \begin{itemize}
 	\item
 		\begin{tabbing}
 			\textbf{Displacement:} \=
-			\parbox[t]{0.75\textwidth}{%
+			\parbox[t]{0.7\textwidth}{%
 				For linear distance of a particle of rotating object measured along the arc `$s$'}
 		\end{tabbing}
 		\begin{equation*}
 			s = r\theta \quad\text{in}\, (\text{rad}),\,
-			\text{
-				for arc length `$s$' and angular displacement `$\theta$'
-			}
 		\end{equation*}
-		\begin{figure}[htbp]
-			\centering
-			\begin{tikzpicture}[scale=2.5]
-				\begin{scope}[every node/.style={solid, black}]
-					\coordinate (O) at (0,0);
-					\draw[thick, fill=gray!10, fill opacity=0.5] (O) circle (1);
-					\draw[thick, red] (O) -- (60:1);
-					\draw[thick, red] (O) -- +(1,0) node[midway, below] {$r$};
-					\draw[|-|] (O) ++(0:1.2) arc (0:60:1.2) node[midway, right] {$s$};
-					\draw[fill] (O) circle (0.025) node[above right] {$\theta$};
-				\end{scope}
-			\end{tikzpicture}%
-		\end{figure}
+				for arc length `$s$' and angular displacement `$\theta$'
 	\item
 		\begin{tabbing}
 			\textbf{Velocity:} \=
@@ -159,8 +145,34 @@ All particles of a rotating body move in a circle perpendicular to the axis
 			a_r = r\alpha
 		\end{equation*}
 \end{itemize}
+\end{minipage}
+\begin{minipage}{0.35\textwidth}
+	\centering
+	\begin{tikzpicture}[scale=2.5]
+		\begin{scope}[every node/.style={solid, black}]
+			\coordinate (O) at (0,0);
+			\coordinate (A) at ([shift={(0:1)}]O);
+			\coordinate (B) at ([shift={(60:1)}]O);
 
-\textbf{The right-hand rule} \\
+			\fill[fill=gray!10, fill opacity=0.5] (O) -- (A) arc[start angle=0, end angle=60, radius=1] -- cycle;
+			\draw[thick] (O) circle (1);
+			\draw[thick, red] (O) -- (A) node[midway, below] {$r$};
+			\draw[thick, red] (O) -- (B);
+
+			\draw[fill] (O) circle (0.025);
+			\node at ([shift={(30:0.15)}]O) {$\theta$}
+			\draw (O) ++(0:0.25) arc (0:60:0.25);
+
+			\draw[|-|, thick] (O) ++(0:1.2) arc (0:60:1.2) node[midway, right] {$s$};
+			
+			\draw[->] (O) ++(0:1) -- ([turn]90:0.5) node[midway, right] {$v$};
+			\draw[->] (O) ++(60:1) -- ([turn]90:0.5) node[pos=0.75, right] {$v$};
+		\end{scope}
+	\end{tikzpicture}
+\end{minipage}
+\bigskip
+
+\textbf{The right-hand rule}
 \begin{itemize}
 	\item The \textbf{fingers} in the direction of \textbf{rotation}
 	\item The \textbf{thumb} in the direction of \textbf{angular velocity vector}
