@@ -1,0 +1,96 @@
+\year=2026
+\month=10
+
+\day=05
+
+\setcounter{chapter}{1}
+\chapter{Static Equilibrium \& Elasticity}
+\section{Conditions \& Examples for Static Equilibrium}
+\subsection{Rigid Body}
+
+The rigid body depends on the \emph{physical properties} of the material
+
+\subsection{Free-body diagrams}
+\subsection{Equilibrium}
+
+\textbf{Equilibrium:} the state of balance in a system
+There is \emph{no linear motion} \& \emph{no rotational motion}
+
+A body in equilibrium can be moving
+but if so its linear \& angular velocities must be constant
+
+The conditions of static equilibrium are
+\begin{enumerate}
+	\item The result force on the system \( F_{\text{net}} = 0 \)
+	\item The result torque on the system \( \sum\tau = 0 \)
+\end{enumerate}
+
+\subsection{The first condition of Equilibrium}
+The sum of the forces acting on the rigid body is zero,
+\[
+	\vec{F} = \vec{F_1} + \vec{F_2} \ldots = 0
+\]
+\begin{itemize}
+	\item	the horizontal forces, \( \sum F_x = F_{\text{net}x} = 0 \)
+	\item	the vertical forces,   \( \sum F_y = F_{\text{net}y} = 0 \)
+\end{itemize}
+
+\begin{figure}[htbp]
+	\centering
+	\begin{tikzpicture}[scale=4]
+		\coordinate (O) at (0,0);
+
+		\draw[thin, ->] (O) ++(-1,0) -- (O) -- ++(1,0) node[right] {$x$};
+		\draw[thin, ->] (O) ++(0,-1) -- (O) -- ++(0,1) node[above] {$y$};
+
+		\tikzset{
+			vecstyle/.style={draw=green, thick, ->}
+		}
+		\draw[vecstyle] (O) -- ++(25:1) node[above] {$F_1$};
+		\draw[vecstyle] (O) -- ++(143:1) node[above] {$F_3 = 29.0 N$};
+		\draw[vecstyle] (O) -- ++(-90:1) node[right] {$F_2 = 22.0 N$};
+	\end{tikzpicture}
+	\label{fig: three forces}
+\end{figure}
+In figure,
+the net force is
+(if we take the direction to the right to be positive)
+\[
+	\sum F = 12 + 6.0 - 8.0 = 10 N
+\]
+
+\begin{align*}
+	F_{2x} &= 0 \\
+	F_{2y} &= -22.0 N \\
+	F_{3x} &= -29.0\cos{37\deg} = -23.16 N \\
+	F_{3y} &= 29.0\sin{37\deg} = 17.45 N \\
+	\text{In equilibrium,}
+	\sum F_{x} = 0 &\mathbin{\&}
+	\sum F_{y} = 0 \\
+	F_{1x} + F_{2x} + F_{3x} &= 0 \\
+	F_{1x} + 0 - 23.16  &= 0 \\
+	F_{1x} &= 23.16 N \\
+	%
+	F_{1y} + F_{2y} + F_{3y} &= 0 \\
+	F_{1y} - 22.0 + 17.45 &= 0 \\
+	F_{1y} &= 4.55 N \\
+	%
+	\text{Therefore,}\enspace
+	F_{1} &= \sqrt{ {F_{1x}}^2 + {F_{1y}}^2 } \\
+	F_{1} &= \sqrt{ {23.16}^2 + {4.55}^2 } = 23.6 N \\
+	\text{The angle is found from,}\enspace
+	\tan\theta &= \frac{F_{1y}}{F_{1x}},
+	\theta = \tan^{-1} \frac{4.55}{23.16} = 11.115\deg
+\end{align*}
+
+Torque is a kind of "rotational force":
+\( \vec\tau = \vec{r} \times \vec{F} \)
+
+\textbf{Unit of torque}
+\( \lvert \tau \rvert = r F_{\perp} = Nm \)
+
+The torque is
+\begin{itemize}
+	\item \textbf{positive} when \textbf{counter-clockwise} rotation
+	\item \textbf{negative} when \textbf{clockwise} rotation
+\end{itemize}
